@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Replicated Navigation & Hero</title>
+    <title>Jomacs</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </head>
 <body>
     <div class="hero">
         <div class="hero-content">
             <h1>Leading Provider of Innovative And <span style="color: rgb(90, 90, 240)"> Reliable IT Solutions.</span></h1>
             <p>Delivering high-quality technology solutions that empower clients and drive business success, establishing our position as a leading provider in the industry.</p>
-            <!--<a href="#" class="cta-button">Get Started</a> -->
         </div>
     </div>
 
@@ -20,6 +24,7 @@
             <a href="#" class="logo">
                 <img src="./brand-logo.png" alt="JOMACS Logo">
             </a>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
